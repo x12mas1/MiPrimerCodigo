@@ -9,6 +9,12 @@ body {
     margin-top: 20px;
 }
 
+#tablero { /* Asegúrate de que el estilo se aplica al ID correcto */
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* Define 10 columnas de 30px de ancho */
+    grid-gap: 2px; /* Espacio entre las celdas */
+}
+
 .celda {
     width: 30px;
     height: 30px;
@@ -18,7 +24,7 @@ body {
     align-items: center;
     font-size: 16px;
     cursor: pointer;
-    user-select: none; /* Evita la selección de texto al hacer doble clic */
+    user-select: none;
 }
 
 .celda.revelada {
