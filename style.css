@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tablero-container {
+    margin-top: 20px;
+}
+
+.celda {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none; /* Evita la selección de texto al hacer doble clic */
+}
+
+.celda.revelada {
+    background-color: #eee;
+    border-color: #999;
+    cursor: default;
+}
+
+.celda.mina {
+    background-color: red;
+    color: white;
+}
+
+.celda.bandera {
+    background-color: yellow;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+}
