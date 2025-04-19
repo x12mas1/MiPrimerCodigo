@@ -29,7 +29,8 @@ function iniciarJuego() {
         }
     }
 
-    tableroElement.style.gridTemplateColumns = `repeat(${columnas}, 30px)`;
+    // Ya no es necesario establecer gridTemplateColumns aquí, se define en el CSS
+    // tableroElement.style.gridTemplateColumns = `repeat(${columnas}, 30px)`;
 }
 
 function crearTablero(filas, columnas, numeroMinas) {
